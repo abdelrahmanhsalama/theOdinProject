@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("imgs/lYC4vag0y7M.jpg");
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Open Sans";
+}
+
+#container {
+    background-color: rgba(245, 245, 245, 0.5);
+    min-width: fit-content;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+#search-container {
+    margin-block-end: 10px;
+}
+
+#search-input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    height: 2rem;
+}
+
+#search-button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    height: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#current-weather {
+    display: flex;
+    margin-block-end: 20px;
+}
+
+#current-weather-icon {
+    display: flex;
+    align-items: center;
+    font-size: 8rem;
+}
+
+#current-weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#current-weather-city {
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#current-weather-temp {
+    font-size: 2rem;
+}
+
+#switch-temp {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        padding: 10px;
+    }
+    #current-weather-city {
+        font-size: 2rem;
+    }
+    #current-weather-temp {
+        font-size: 1rem;
+    }
+}

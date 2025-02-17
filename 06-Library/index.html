@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link href="normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Library App</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Library App</h1>
+        <p>"Library App" project, developed as part of "The Odin Project", focused on applying object-oriented principles through JavaScript's objects and constructors. The application aims to simulate basic library management functionalities. The user interface was kept simple due to its demonstrative purpose.</p>
+        <main id="books">
+            <div class="book-card">
+                <h2>Oliver Twist</h2>
+                <p>Author: Charles Dickens</p>
+                <p>Pages: 500</p>
+                <p>Read: Yes</p>
+                <button data-index="0">Delete Book</button>
+                <button>Not Read?</button>
+            </div>
+            <div>
+                <h2>David Copperfield</h2>
+                <p>Author: Charles Dickens</p>
+                <p>Pages: 500</p>
+                <p>Read: No</p>
+                <button data-index="1">Delete Book</button>
+                <button>Read?</button>
+            </div>
+        </main>
+        <button id="modal-button">Add Book</button>
+        <dialog id="book-modal">
+            <h2>Add Book</h2>
+            <form>
+                <label for="book-title">Title:</label><input id="book-title" type="text" required>
+                <label for="book-author">Author:</label><input id="book-author" type="text" required>
+                <label for="book-pages">Pages:</label><input id="book-pages" type="number" min="1" required>
+                <label>
+                    Read?
+                    <input id="book-read-yes" type="radio" name="book-read" value="true"> Yes
+                    <input id="book-read-no" type="radio" name="book-read" value="false" checked> No
+                </label>
+                <button type="submit" id="submit-button">Submit</button>
+                <button type="reset" id="close-button">Close Form</button>
+            </form>
+        </dialog>
+    </div>
+</body>
+</html>

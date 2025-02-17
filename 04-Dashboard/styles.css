@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: min-content 1fr;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+nav {
+    background-color: rgb(25,146,212);
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+#heading {
+    margin: 25px 25px 50px 25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+}
+
+#list {
+    margin: 25px 25px 45px 25px;
+    list-style-type: none;
+}
+
+#list li {
+    margin-bottom: 10px;
+}
+
+header {
+    background-color: rgb(255,255,255);
+    grid-row: 1 / 2;
+}
+
+#header-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 25px;
+}
+
+#search-box {
+    background-color: rgb(226,232,240);
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    padding: 10px;
+    width: 75%;
+}
+
+.notification {
+    margin-left: auto;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 40.8px;
+}
+
+.av-lrg {
+    width: 81.6px;
+}
+
+.greeting-name {
+    font-size: 20px;
+}
+
+.header-button {
+    background-color: rgb(25,146,212);
+    color: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+    border: none;
+}
+
+.new-button {
+    margin-left: auto;
+}
+
+main {
+    background-color: rgb(226,232,240);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main-section {
+    margin: 10px;
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+
+.section-heading {
+    font-size: 20px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 5px 20px 5px;
+    display: flex;
+}
+
+.card-content {
+    margin: 10px;
+}
+
+.yellow-bar {
+    background-color: rgb(240,180,41);
+    height: 100%;
+    flex: 1 0 5px;
+    margin-right: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sidebar-card {
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+}
+
+.sidebar-card hr {
+    margin: 10px 0;
+}
+
+.card-title {
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.card-buttons {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.sidebar-avatar {
+    border-radius: 50%;
+    width: 40.8px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.user-name {
+    color: rgb(101,101,101);
+    font-size: 14px;
+}

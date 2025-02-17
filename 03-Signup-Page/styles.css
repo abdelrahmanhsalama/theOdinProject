@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#img-section {
+    background-image: url(imgs/25xggax4bSA.jpg);
+    flex: 1;
+    height: 100vh;
+    position: relative;
+}
+
+#credits {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#credits a {
+    color: white;
+}
+
+#logo {
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 25vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding: 10px;
+}
+
+#form-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(249,250,251);
+}
+
+#intro-text {
+    margin: 50px 25px;
+    font-size: 20px;
+}
+
+#intro-1 {
+    margin-bottom: 10px;
+}
+
+#intro-2 {
+    font-size: 18px;
+}
+
+#encouragement {
+    font-size: 20px;
+}
+
+#form-subsection {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px;
+    box-shadow: 0 5px rgb(222,223,224);
+}
+
+label {
+    display: inline-block;
+    font-size: 16px;
+    color: rgb(46,56,69);
+    margin: 10px 10px 0 0;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    padding: 2px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+input:focus {
+    border: 1px solid #596D48;
+    outline: none;
+}
+
+button {
+    align-self: flex-start;
+    margin: 50px 25px 10px 25px;
+    background-color: #596D48;
+    border: 1px solid #596D48;
+    border-radius: 2px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: white;
+    color: #596D48;
+    border: 1px solid #596D48;
+    cursor: pointer;
+}
+
+#old {
+    align-self: flex-start;
+    margin: 0 25px;
+    font-weight: 400;
+}

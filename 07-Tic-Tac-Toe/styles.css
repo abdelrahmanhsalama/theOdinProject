@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, p, button {
+    margin: 10px;
+}
+
+#gameboard {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 2px;
+    font-size: 50px;
+}
+
+#score-p {
+    margin-bottom: 0;
+}
+
+#turn-p {
+    margin-top: 0;
+}
+
+input[type="button"] {
+    margin: 5px;
+}
